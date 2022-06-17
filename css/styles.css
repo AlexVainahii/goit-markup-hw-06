@@ -500,7 +500,13 @@ body {
 .subscript-input::placeholder{
   color: rgba(255, 255, 255, 0.6);
 }
-
+.subscript-input:hover,
+.subscript-input:focus,
+{
+  border-color: var(--accent-text-color);
+  cursor: pointer;
+  outline: none;
+}
 
 
 .footer-btn {
@@ -617,16 +623,17 @@ color: var(--secondary-text-color);
 
 .modal-box-input:hover,
 .modal-box-input:focus{
+ 
+  
   fill: var(--accent-text-color);
   
 }
 
-.subscript-input:hover,
-.subscript-input:focus,
 .modal-textarea:hover,
 .modal-textarea:focus,
 .modal-input:hover,
 .modal-input:focus{
+  color: var(--accent-btn-text-color);
   border-color: var(--accent-text-color);
   cursor: pointer;
   outline: none;
