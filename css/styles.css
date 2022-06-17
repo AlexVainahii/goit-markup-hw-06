@@ -186,7 +186,7 @@ body {
   color: var(--background-color);
 }
 
-.hero-btn {
+.hero-btn, .footer-btn {
   border: none;
 
   padding-top: 10px;
@@ -209,7 +209,8 @@ body {
   transition: background-color var(--time-duration) var(--time-function);
 }
 .hero-btn:hover,
-.hero-btn:focus {
+.hero-btn:focus,
+.footer-btn:hover, .footer-btn:focus {
   background-color: var(--accent-btn-background-color);
 }
 /* ----------------Tasks------------------- */
@@ -423,7 +424,7 @@ body {
   text-align: left;
   color: var(--background-color);
 }
-.footer-title {
+.footer-title, .subscript-label {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -462,6 +463,42 @@ body {
   fill: var(--background-color);
   background-color: var(--accent-text-color);
 }
+
+.subscription{
+  position: relative;
+display: flex;
+padding-top: 48px;
+width: 500px;
+height: 86px;
+}
+
+.subscript-label{
+  position: absolute;
+  padding-top: 36px;
+top: -20px;
+}
+.subscript-input{
+width: 358px;
+height: 50px;
+}
+
+.footer-btn{
+  display: flex;
+  width: 200px;
+  height: 50px;
+  margin-left: 12px;
+  justify-content: center;
+  align-items: center;
+  padding: 9px 28px;
+ }
+ 
+ .btn-icon{
+  fill: var(--background-color);
+  margin-left: 10px;
+  }
+
+
+
 /* ----------------BACKDROP------------------- */
 .backdrop {
   position: fixed;
