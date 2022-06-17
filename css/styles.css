@@ -186,7 +186,9 @@ body {
   color: var(--background-color);
 }
 
-.hero-btn, .footer-btn {
+.hero-btn,
+.footer-btn,
+.modal-btn {
   border: none;
 
   padding-top: 10px;
@@ -210,7 +212,8 @@ body {
 }
 .hero-btn:hover,
 .hero-btn:focus,
-.footer-btn:hover, .footer-btn:focus {
+.footer-btn:hover,
+.footer-btn:focus {
   background-color: var(--accent-btn-background-color);
 }
 /* ----------------Tasks------------------- */
@@ -398,6 +401,7 @@ body {
 }
 .footer .container {
   display: flex;
+  position: relative;
 }
 
 .logo .footer-logo-tekst {
@@ -424,7 +428,8 @@ body {
   text-align: left;
   color: var(--background-color);
 }
-.footer-title, .subscript-label {
+.footer-title,
+.subscript-label {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -464,40 +469,48 @@ body {
   background-color: var(--accent-text-color);
 }
 
-.subscription{
-  position: relative;
-display: flex;
-padding-top: 48px;
-width: 500px;
-height: 86px;
-}
-
-.subscript-label{
+.subscription {
   position: absolute;
-  padding-top: 36px;
-top: -20px;
-}
-.subscript-input{
-width: 358px;
-height: 50px;
+  display: flex;
+  right: 15px;
+  padding-top: 48px;
 }
 
-.footer-btn{
+.subscript-label {
+  position: absolute;
+
+  top: 12px;
+}
+.subscript-input {
+  width: 358px;
+  height: 50px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--contact-color);
+}
+
+.footer-btn {
   display: flex;
   width: 200px;
   height: 50px;
   margin-left: 12px;
   justify-content: center;
   align-items: center;
-  padding: 9px 28px;
- }
- 
- .btn-icon{
+  padding: 10px 28px;
+}
+
+.btn-icon {
   fill: var(--background-color);
   margin-left: 10px;
-  }
-
-
+}
 
 /* ----------------BACKDROP------------------- */
 .backdrop {
@@ -519,7 +532,7 @@ height: 50px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
-
+  padding: 40px;
   transition: transform var(--time-duration) var(--time-function);
   background-color: var(--background-color);
 }
